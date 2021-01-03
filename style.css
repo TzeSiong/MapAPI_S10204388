@@ -63,11 +63,38 @@ a:hover{
 }
 
 .mapContainer{
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
     height: 300px;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px 6px;
+    background-image: url('images/atlas-1869680_1920.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.mapContainer:hover{
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
 }
 
 .parkingContainer{
+    margin-top: 20px;
+    margin-bottom: 26px;
+    margin-left: 16px;
+    margin-right: 16px;
     height: 300px;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px 6px;
+    background-image: url('images/holidays-1283014_1920.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.parkingContainer:hover{
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
 }
 
 #introHeader{
