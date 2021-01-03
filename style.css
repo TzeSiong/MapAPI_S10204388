@@ -1,0 +1,76 @@
+
+.navbar{
+    background-color:white;
+}
+
+.navbar-toggler{
+    background-color: aqua;
+    border: none;
+    padding: 10px 6px;
+}
+
+.navbar-toggler span{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background-color: white;
+}
+
+.navbar-toggler span + span{
+    margin-top: 4px;
+    margin-left: 2px;
+    width: 18px;
+}
+
+.navbar-toggler span + span + span{
+    margin-top: 4px;
+    margin-left: 4px;
+    width: 14px;
+}
+
+.collapse{
+    color: grey;
+}
+
+a{
+    color:steelblue;
+}
+
+a:hover{
+    color: lightgray;
+}
+
+.gpsImg{
+    max-width: 50px;
+}
+
+.homeContainer{
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 300px;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px 6px;
+    background-image: url('images/map-of-the-world-2401458_1920.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.homeContainer:hover{
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+}
+
+.mapContainer{
+    height: 300px;
+}
+
+.parkingContainer{
+    height: 300px;
+}
+
+#introHeader{
+    color: rgb(0, 226, 170);
+    background-color: rgba(128, 128, 128, 0.534);
+}
