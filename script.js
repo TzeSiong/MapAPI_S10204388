@@ -1,14 +1,14 @@
 $(document).ready(function(){
-    $('homeContainer').hover(
+    $('.homeContainer').hover(
         function(){
-            $(this).animate({
-                marginTop: "-=1%",
-            },200);
+            $('.homeContainer').animate({
+                marginTop: "16px",
+            }, 200);
         },
 
         function(){
-            $(this).animate({
-                marginTop: "0%",
+            $('.homeContainer').animate({
+                marginTop: "20px",
             },200);
         }
     )
