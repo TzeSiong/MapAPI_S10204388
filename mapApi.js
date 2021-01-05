@@ -9,20 +9,38 @@ $(document).ready(function () {
     zoom: 13
     });
      
-    map.addControl(
+    let geofinder = 
     new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
     mapboxgl: mapboxgl
     })
-    );
 
-    map.addControl(
-        new mapboxgl.GeolocateControl({
-        positionOptions: {
-        enableHighAccuracy: true
-        },
-        trackUserLocation: true
-        })
-        );
+    map.addControl(geofinder)
+
+    geofinder.on('geofinder', function(e){
+        let findLon = e.coords.longitude;
+        let findLat = e.coords.latitude
+        let findPosition = [findLon, findLat];
+        console.log(findPosition);
+    })
+
+    let geolocate =
+    new mapboxgl.GeolocateControl({
+    positionOptions: {
+    enableHighAccuracy: true
+    },
+    trackUserLocation: true
+    })
+    
+    map.addControl(geolocate)
+
+    geolocate.on('geolocate', function(e){
+        let currentLon = e.coords.longitude;
+        let currentLat = e.coords.latitude
+        let currentPosition = [currentLon, currentLat];
+        console.log(currentPosition);
+    })
+
+    
     
   });

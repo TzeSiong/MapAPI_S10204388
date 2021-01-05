@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="normalize.css">
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- mapbox -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
@@ -62,17 +61,23 @@ type="text/css"
     </div>
   </nav>
 
-  <div id='map' style='width: 600px; height: 400px; margin: 20px;'></div>
+  <div id='map' style='width: 800px; height: 500px; margin: 20px; border-radius: 8px;'></div>
 
-  <h4>My IP Details: <span></span></h4>
-  <div id="ip-details">
-      
-    Currently not set
-  </div>
-
+  <button type="button" class="locationBtn">Get My Location</button>
 
     <script src="mapApi.js"></script>
-    <script src="myIPApi.js"></script>
+    <script>
+      $.ajax({
+        method: "GET",
+        url: "https://ipapi.co/json",
+        //we are not sending any request data so we can ignore this field
+        //data: { }
+      })//[STEP 3]: when the request is successfully done it gets set to our callback function .. function(abc) to be processed
+        //as this is nicely formatted json string 
+        .done(function (data) {
+          console.log(data)
+        })
+    </script>
 </body>
 
 </html>

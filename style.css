@@ -101,3 +101,12 @@ a:hover{
     color: rgb(0, 226, 170);
     background-color: rgba(255, 255, 255, 0.534);
 }
+
+/* map.html */
+
+.locationBtn{
+    border: lightskyblue solid;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: midnightblue;
+}
