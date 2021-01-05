@@ -15,5 +15,14 @@ $(document).ready(function () {
     mapboxgl: mapboxgl
     })
     );
+
+    map.addControl(
+        new mapboxgl.GeolocateControl({
+        positionOptions: {
+        enableHighAccuracy: true
+        },
+        trackUserLocation: true
+        })
+        );
     
   });
