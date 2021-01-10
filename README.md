@@ -19,12 +19,12 @@ The [website](https://tzesiong.github.io/MapAPI_S10204388/)
 
 # Credits
 ## Websites
-Bootstrap example code [website](https://getbootstrap.com/docs/5.0/utilities/flex/)
-Background 3d zigzag [Website](https://www.magicpattern.design/tools/css-backgrounds)
-Mapbox examples [Website](https://docs.mapbox.com/mapbox-gl-js/example/)
+- Bootstrap example code [website](https://getbootstrap.com/docs/5.0/utilities/flex/)
+- Background 3d zigzag [Website](https://www.magicpattern.design/tools/css-backgrounds)
+- Mapbox examples [Website](https://docs.mapbox.com/mapbox-gl-js/example/)
 ## Images
-Gps image [Image](https://pixabay.com/illustrations/gps-mark-location-map-symbol-3635109/)
-World image [Image](https://pixabay.com/illustrations/map-of-the-world-background-paper-2401458/)
-Maps image [Image](https://pixabay.com/photos/atlas-geography-guidance-map-1869680/)
-Car image [Image](https://pixabay.com/photos/holidays-car-travel-route-1283014/)
-House image [Image](https://pixabay.com/photos/living-on-the-edge-home-house-edge-844873/)
+- Gps image [Image](https://pixabay.com/illustrations/gps-mark-location-map-symbol-3635109/)
+- World image [Image](https://pixabay.com/illustrations/map-of-the-world-background-paper-2401458/)
+- Maps image [Image](https://pixabay.com/photos/atlas-geography-guidance-map-1869680/)
+- Car image [Image](https://pixabay.com/photos/holidays-car-travel-route-1283014/)
+- House image [Image](https://pixabay.com/photos/living-on-the-edge-home-house-edge-844873/)

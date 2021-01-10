@@ -1,3 +1,8 @@
+/* Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin&display=swap');
 
 body{
     background-color: #f1f1f1;
@@ -32,6 +37,15 @@ body{
     margin-top: 4px;
     margin-left: 4px;
     width: 14px;
+}
+
+.navbar-brand{
+    font-family: 'Parisienne', cursive;
+    font-size: 28px;
+}
+
+.nav-link, .dropdown-item{
+    font-family: 'Changa', sans-serif;
 }
 
 .collapse{
@@ -77,6 +91,7 @@ a:hover{
 
 #home p{
     color: white;
+    font-family: 'Palanquin', sans-serif;
 }
 
 .homeContainer:hover #home{
@@ -112,6 +127,7 @@ a:hover{
 
 #aMap p{
     color: white;
+    font-family: 'Palanquin', sans-serif;
 }
 
 .mapContainer a{
@@ -125,6 +141,7 @@ a:hover{
 
 #header{
     color: rgb(45, 235, 187);
+    font-family: 'Philosopher', sans-serif;
 }
 
 /* map.html */
@@ -166,11 +183,16 @@ a:hover{
 
 #distance p{
     color: white;
+    font-family: 'Palanquin', sans-serif;
 }
 
 .calculator:hover #distance{
     background-color: rgba(83, 83, 83, 0.75);
     transition: 0.2s linear;
+}
+
+#distance h5{
+    color: rgb(51, 223, 235);
 }
 
 .homeContainer2{
@@ -204,6 +226,7 @@ a:hover{
 
 #home2 p{
     color: white;
+    font-family: 'Palanquin', sans-serif;
 }
 
 .homeContainer2:hover #home2{
