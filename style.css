@@ -1,4 +1,9 @@
 
+body{
+    background-color: #f1f1f1;
+    background: linear-gradient(135deg, #6ee0cf55 25%, transparent 25%) -37px 0/ 74px 74px, linear-gradient(225deg, #6ee0cf 25%, transparent 25%) -37px 0/ 74px 74px, linear-gradient(315deg, #6ee0cf55 25%, transparent 25%) 0px 0/ 74px 74px, linear-gradient(45deg, #6ee0cf 25%, #f1f1f1 25%) 0px 0/ 74px 74px;
+}
+
 .navbar{
     background-color:white;
 }
@@ -216,3 +221,4 @@ a:hover{
     margin: 30px;
     position: absolute;
 }
+
