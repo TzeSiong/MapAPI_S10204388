@@ -28,7 +28,7 @@ type="text/css"
 <body>
   <nav class="navbar navbar-expand-lg navbar-info d-flex justify-content-center">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navigation</a>
+      <a class="navbar-brand" href="#">Navigation Corner</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -41,16 +41,17 @@ type="text/css"
             <a class="nav-link" href="#map">Map</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#parking">Parking</a>
+            <a class="nav-link" href="#navCal">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#home2">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Go to
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="map.html">Home</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="parking.html">Available Parking</a>
+              <a class="dropdown-item" href="index.html">Home</a>
             </div>
           </li>
         </ul>
@@ -60,24 +61,44 @@ type="text/css"
       </div>
     </div>
   </nav>
+  
 
-  <div id='map' style='width: 800px; height: 500px; margin: 20px; border-radius: 8px;'></div>
+  <section class="d-flex flex-column">
+    <div class="mapApi">
+        <div id='map' class="col"></div>
+    </div>
 
-  <button type="button" class="locationBtn">Get My Location</button>
+    <div class="calculator" id="navCal">
+      <div id="distance" class="d-flex flex-column justify-content-between align-items-center">
+        
+        <h4 id="header">Distance Calculator</h4>
+        <p class="d-flex">Search for your destination on the map, to 
+          find out the driving distance from your current location to your destination.
+        </p>
+        <h5>Current Location</h5>
+        <p id="coords" class="d-flex justify-content-center">Find your location!</p>
+        <h5>Destination</h5>
+        <p id="destination" class="d-flex">Find your Destination!</p>
+        <p id="distanceText" class="d-flex"></p>
+        <p id="durationText" class="d-flex"></p>
+      </div>
+    </div>
 
+    <div class="homeContainer2 d-flex flex-column justify-content-between align-items-center">
+      <div class="col-6 d-flex flex-column" id="home2">
+        <h3 id="header" class="d-flex justify-content-center">Home page</h3>
+        <p class="d-flex justify-content-center">Back to homescreen</p>
+      </div>
+      <button type="button" class="btn btn-info btn-lg mt-auto"><a href="index.html">Home</a></button>
+    </div>
+
+  </section>
+
+  
     <script src="mapApi.js"></script>
-    <script>
-      $.ajax({
-        method: "GET",
-        url: "https://ipapi.co/json",
-        //we are not sending any request data so we can ignore this field
-        //data: { }
-      })//[STEP 3]: when the request is successfully done it gets set to our callback function .. function(abc) to be processed
-        //as this is nicely formatted json string 
-        .done(function (data) {
-          console.log(data)
-        })
-    </script>
+    <script src="animate.js"></script>
+
+  
 </body>
 
 </html>
